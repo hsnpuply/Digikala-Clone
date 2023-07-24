@@ -1,0 +1,259 @@
+/* Fonts */
+    @font-face {
+        font-family: 'IRANyekan';
+        src: url(fonts/iranYekan.woff2);
+    }
+
+    @font-face {
+        font-family: 'Grinds';
+        src: url(fonts/Grinds.woff);
+    }
+/* End of Fonts */
+/* Common Styles */
+*,*::before,*::after{
+    margin:0;
+    padding:0 ;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+    /* to make the rem = 10px */
+}
+
+/* End of Common Styles */
+
+/* navbar */
+.navbar{
+    display:flex;
+    flex-direction:column;
+}
+.top-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 0;
+    background-color: #8b8889;
+}
+
+
+.search-box span{
+    font-family: "IRANyekan";
+}
+.logo-name{
+    font-family: 'Grinds',sans-serif;
+    font-size:1.7rem;
+    max-width: 12rem;
+    margin: 0 1.7rem;
+    color: #ee384e;
+}
+.search-box{
+    position: relative;
+    margin-left: auto;
+}
+.search-content{
+    margin: 1rem 0;
+    width: 61.2rem;
+    height: 4.2rem;
+    background-color: #e3e3e9dc;
+    border: none;
+    border-radius: .1rem;
+    font-family: "IRANyekan",sans-serif;
+    border-radius: .5rem;
+    font-size: 1rem;
+}
+
+.search-box input{
+    padding: .8rem 4rem;
+    font-size: 1.7rem;
+}
+
+.fa-search{
+    color: rgb(78, 74, 74);
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    bottom: 2rem;
+    z-index: 100;
+}
+
+.fa-user,.fa-sort-down,.fa-shopping-bag{
+    font-size: 2rem;
+    color:rgb(12, 12, 12);
+}
+
+.fa-sort-down{
+    position: absolute;
+    bottom: 1.3rem;
+}
+
+.fa-user{
+    margin: 0 2rem;
+}
+.user-activity{
+    margin: 0 2rem;
+    position: relative;
+    font-size:3rem;
+    font-weight: bold;
+}
+.user-activity span{
+    margin: 0 1.5rem;
+}
+.user-activity a i{
+    font-size: 2.5rem;
+}
+
+.navbar-full-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5.5rem;
+    font-family: "IRANyekan",sans-serif;
+    background-color: #d8cdce;
+}
+
+.navbar-full-line a{
+    color: #5a5c7a;
+}
+.navbar-full-line span{
+    font-size: 1.6rem;
+    color:rgb(90, 92, 122);
+}
+.navbar-full-line i{
+    font-size: 1.5rem;
+    color:rgb(90, 92, 122);
+}
+.navbar-full-line p{
+    font-size: 1.5rem;
+}
+.nav-menu  ul{
+    display: flex;
+    align-items: center;
+}
+.nav-menu li i{
+    margin: 0 1.2rem 0 .8rem  ;
+}
+.nav-menu a{
+    margin: 0 .3rem;
+}
+.navbar-line{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1.5rem;
+}
+
+.sell-in-digi{
+    display: flex;
+    margin: 0 1rem;
+    gap: 1rem;
+}
+
+.sell-in-digi p{
+    font-size: 1.6rem;
+}
+
+
+
+.navbar-catograize{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-catograize p,.navbar-catograize i,.navbar-catograize span{
+    font-size: 1.6rem;
+}
+.navbar-catograize span{
+    margin: 0 1.2rem 0 .1rem;
+}
+
+.navbar-catograize i{
+    margin:0 .45rem 0 1rem ;
+}
+.white-space-nav-menu{
+    margin: 0 1rem 0 .3rem;
+}
+.navbar-catograize a{
+    display: flex;
+    align-items: center;
+}
+.send-loaction{
+    margin-left: 2rem;
+    position: relative;
+}
+
+.send-loaction .send-to-location-title{
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 1.1rem 0;
+    text-align: center;
+    top: 3.3rem;
+    border-radius: .3rem;
+    border: 1px solid rgb(35, 37, 78);
+    left: -1rem;
+    background-color: rgb(63, 64, 100);
+    color: #fff;
+
+}
+.send-loaction:hover .send-to-location-title{
+    display:block;
+
+}
+.fa-map-marker-alt{
+    margin-left: .6rem;
+}
+
+.navbar-catograize a{
+    position: relative;
+}
+
+.nav-hover{
+    position: relative;
+}
+
+.nav-hover::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem; /* Adjust this value to control the distance between the text and the border */
+    width: 100%;
+    height: 2px;
+    background-color: #ee384e; /* Change this color to your desired border color */
+    transform: scaleX(0) translate(-50%,50%);
+    transition: transform 0.1s ease-in-out;
+}
+
+
+
+
+.nav-hover:hover::after {
+    transform: scaleX(1);
+  }
+
+
+
+
+.navbar-catograize a::after  {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem; /* Adjust this value to control the distance between the text and the border */
+    width: 100%;
+    height: 2px;
+    background-color: #ee384e; /* Change this color to your desired border color */
+    transform: scaleX(0) translate(-50%,50%);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .navbar-catograize:hover a::after {
+    transform: scaleX(1);
+  }
+
+/* End of navbar */
+
+
