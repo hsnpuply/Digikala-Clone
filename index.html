@@ -8,7 +8,10 @@
     <!-- End of Custom Styles -->
     <!-- other styles -->
     <link rel="stylesheet" href="font-awsome-icon/css/all.min.css">
-
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
     <!-- End of other styles -->
 <body>
     <div class="container">
@@ -109,7 +112,202 @@
             <!-- End of NavCategory -->
         </nav>
         <!-- End of Navbar -->
+        <div class="storys">
+            <div class="all-story-elements">
+                <a href="#" class="story-element">
+                    <img src="images/story-e1.jpeg" alt="">
+                    <p>تخفیفات ویژه</p>
+             </a>
+                <!-- 2 -->
+                <a href="#" class="story-element">
+                    <img src="images/story-e2.jpeg" alt="">
+                    <p>خاطرات</p>
+                </a>
+                <!-- 3 -->
+                <a href="#" class="story-element">
+                    <img src="images/story-e3.jpeg" alt="">
+                    <p>بهترین ها</p>
+                </a>
+                <!-- 4 -->
+                <a href="#" class="story-element">
+                    <img src="images/story-e4.jpeg" alt="">
+                    <p>ضد تعریق</p>
+                </a>
+                <!-- 5 -->
+                <a href="#" class="story-element">
+                    <img src="images/story-e5.jpeg" alt="">
+                    <p>ارسال امروز</p>
+                </a>
+                <!-- 6 -->
+                <a href="#" class="story-element">
+                    <img src="images/story-e6.jpeg" alt="">
+                    <p>برنده شو</p>
+                </a>
+                <!-- 7 -->
+                <a href="#" class="story-element">
+                    <img src="images/story-e7.jpeg" alt="">
+                    <p>منتخب هفته</p>
+                </a>
+                <!-- 8 -->
+                <a href="#" class="story-element">
+                    <img src="images/story-e8.jpeg" alt="">
+                    <p>صندل جذاب</p>
+                </a>
+                <!-- end story elements -->
+            </div>
+        </div>
+        <!-- End of Storys -->
 
-    <script src="scripts.js"></script>
+        <!-- Swiper -->
+        <!-- Slider main container -->
+        <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+      <div class="swiper-slide">
+        <a href="#">
+            <img src="images/swiper/2.webp" alt="">
+        </a>
+      </div>
+      <!-- 2 -->
+      <div class="swiper-slide">
+        <a href="#">
+            <img src="images/swiper/2.webp" alt="">
+        </a>
+      </div>
+      <!-- 3 -->
+      <div class="swiper-slide">
+        <a href="#">
+            <img src="images/swiper/3.webp" alt="">
+        </a>
+      </div>
+      <!-- 4 -->
+      <div class="swiper-slide">
+        <a href="#">
+            <img src="images/swiper/4.webp" alt="">
+        </a>
+      </div>
+      <!-- 5 -->
+      <div class="swiper-slide">
+        <a href="#">
+            <img src="images/swiper/5.webp" alt="">
+        </a>
+      </div>
+      <!-- 6 -->
+      <div class="swiper-slide">
+        <a href="#">
+            <img src="images/swiper/6.webp" alt="">
+        </a>
+      </div>
+      <!-- 7 -->
+      <div class="swiper-slide">
+        <a href="#">
+            <img src="images/swiper/7.webp" alt="">
+        </a>
+      </div>
+      <!-- 8 -->
+      <div class="swiper-slide">
+        <a href="#">
+            <img src="images/swiper/8.webp" alt="">
+        </a>
+      </div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- End of Swiper -->
+
+        <!-- offers -->
+        <div class="offers">
+
+        <!-- Buy-Methods -->
+        <div class="buy-methods">
+            <div class="all-methods">
+                <a href="#">
+                    <img src="images/buy-methods/1.png">
+                    <p>بیشتر</p>
+                </a>
+                <!-- 2 -->
+                <a href="#">
+                    <img src="images/buy-methods/2-2.png">
+                    <p>ارسال امروز</p>
+                </a>
+                <!-- 3 -->
+                <a href="#">
+                    <img src="images/buy-methods/3.png">
+                    <p>من و دیجی کالا</p>
+                </a>
+                <!-- 4 -->
+                <a href="#">
+                    <img src="images/buy-methods/4.png">
+                    <p>خرید سر ماه</p>
+                </a>
+                <!-- 5 -->
+                <a href="#">
+                    <img src="images/buy-methods/5.png">
+                    <p>خرید عمده و سازمانی</p>
+                </a>
+                <!-- 6 -->
+                <a href="#">
+                    <img src="images/buy-methods/6.png">
+                    <p>خرید اقساطی</p>
+                </a>
+                <!-- 7 -->
+                <a href="#">
+                    <img src="images/buy-methods/7.png">
+                    <p>حراج استایل</p>
+                </a>
+                <!-- 8 -->
+                <a href="#">
+                    <svg><span>...</span></svg>
+                    <p>دیجی کالا جت</p>
+                </a>
+                <!-- End of methods -->
+            </div>
+
+        </div>
+            <!-- End of Buy-Methods -->
+
+    </div>
+        <!-- End of offers -->
+
+        </div>
+
+
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- scripts js -->
+    <script src="scripts.js">
+    </script>
+    <!-- default -->
+    <script>
+              const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  grabCursor:true,
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+    </script>
+
 </body>
 </html>

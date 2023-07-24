@@ -257,3 +257,73 @@ html{
 /* End of navbar */
 
 
+/* Storys */
+.storys{
+    width: 100%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5a5c7a;
+}
+.all-story-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.5rem;
+}
+.story-element{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-element p{
+    font-family: "IRANyekan",sans-serif;
+    margin-top: .4rem;
+    font-size:1.4rem;
+    color: #000;
+}
+
+.story-element img{
+    width: 8.5rem;
+    border-radius: 50%;
+    padding: .5rem;
+    border: .2rem solid red;
+}
+/* End of Storys */
+
+/* Swiper */
+
+.swiper {
+    width: 100%;
+    height: 43rem;
+  }
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* End of Swiper */
+
+/* Offers */
+.offers{
+    width: 100%;
+    background:#656ff3;
+    padding: 1rem 2rem;
+}
+.offers svg{
+    width: 4rem;
+    height:4rem;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+}
+
+.offers svg span{
+    
+}
+/* End of Offers */
