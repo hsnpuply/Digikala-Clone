@@ -314,16 +314,36 @@ html{
     width: 100%;
     background:#656ff3;
     padding: 1rem 2rem;
+    font-family: "IRANyekan",sans-serif;
 }
-.offers svg{
-    width: 4rem;
-    height:4rem;
-    background-color: red;
-    border-radius: 50%;
-    position: relative;
+.buy-methods{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 2.5rem 0;
 }
 
-.offers svg span{
-    
+.all-methods{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
 }
+
+.buy-methods img:not(.aghsat){
+    width: 5.5rem;
+    border-radius: 50%;
+}
+.aghsat{
+    width: 5.5rem;
+}
+
+.buy-methods a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
 /* End of Offers */
