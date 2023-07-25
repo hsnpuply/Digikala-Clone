@@ -232,42 +232,42 @@
         <div class="buy-methods">
             <div class="all-methods">
                 <a href="#">
-                    <img src="images/buy-methods/8.svg">
+                    <img src="images/offers/buy-methods/8.svg">
                     <p>بیشتر</p>
                 </a>
                 <!-- 2 -->
                 <a href="#">
-                    <img src="images/buy-methods/2-2.png">
+                    <img src="images/offers/buy-methods/2-2.png">
                     <p>ارسال امروز</p>
                 </a>
                 <!-- 3 -->
                 <a href="#">
-                    <img src="images/buy-methods/3.png">
+                    <img src="images/offers/buy-methods/3.png">
                     <p>من و دیجی کالا</p>
                 </a>
                 <!-- 4 -->
                 <a href="#">
-                    <img src="images/buy-methods/4.png">
+                    <img src="images/offers/buy-methods/4.png">
                     <p>خرید سر ماه</p>
                 </a>
                 <!-- 5 -->
                 <a href="#">
-                    <img src="images/buy-methods/5.png">
+                    <img src="images/offers/buy-methods/5.png">
                     <p>خرید عمده و سازمانی</p>
                 </a>
                 <!-- 6 -->
                 <a href="#">
-                    <img src="images/buy-methods/6.png" class="aghsat">
+                    <img src="images/offers/buy-methods/6.png" class="aghsat">
                     <p>خرید اقساطی</p>
                 </a>
                 <!-- 7 -->
                 <a href="#">
-                    <img src="images/buy-methods/7.png">
+                    <img src="images/offers/buy-methods/7.png">
                     <p>حراج استایل</p>
                 </a>
                 <!-- 8 -->
                 <a href="#">
-                    <img src="images/buy-methods/7.png">
+                    <img src="images/offers/buy-methods/7.png">
                     <p>دیجی کالا جت</p>
                 </a>
                 <!-- End of methods -->
@@ -275,6 +275,38 @@
 
         </div>
             <!-- End of Buy-Methods -->
+
+            <!-- incredible offers -->
+            <div class="incredible-offers">
+                    <!-- Slider main container -->
+    <div class="swiper-container-2 swiper" id="kalle-x">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="images/story-e2.jpeg" alt="">
+    </div>
+      <div class="swiper-slide">
+        <img src="images/offers/buy-methods/2-2.png" alt="">
+
+      </div>
+      <div class="swiper-slide">
+        <img src="images/story-e2.jpeg" alt="">
+
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+            </div>
+            <!-- End of incredible offers -->
 
     </div>
         <!-- End of offers -->
@@ -289,9 +321,13 @@
     </script>
     <!-- default -->
     <script>
-              const swiper = new Swiper('.swiper', {
+ const swiper1 = new Swiper('.swiper', {
   // Optional parameters
   grabCursor:true,
+  autoplay:{
+    delay:3500,
+    disableOnInteraction:false,
+  },
   direction: 'horizontal',
   loop: true,
 
@@ -305,6 +341,24 @@
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+});
+
+ new Swiper('#kalle-x', {
+    autoplay:{
+    delay:1000,
+    disableOnInteraction:false,
+  },
+  // Optional parameters
+  slidesPerView:1.5,
+  centeredSlides:true,
+  spaceBetween:24,
+  lazyLoading:true,
+  loop:true,
+  keyboard:{
+    enabled:true,
+  }
+
 
 });
     </script>
