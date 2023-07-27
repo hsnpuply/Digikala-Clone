@@ -352,7 +352,7 @@ html{
 /* Incredible offers */
     .swiper-container-2{
         max-width: 100%;
-        height: 23rem;
+        height: 31rem;
         padding: 2rem;
         overflow: hidden;
         background:linear-gradient(to top,#ef4056,#ef394e);
@@ -368,20 +368,113 @@ html{
         justify-content: center;
         background-color: #fff;
         margin: 0 .7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .price-and-discount{
-        position: relative;
-        background-color: #5a5c7a;
-
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 
+
     .discount-price{
-        position: absolute;
+        width: 100%;
+        text-decoration: line-through;
+        color: #8b8889;
+        margin-left: 2rem;
+    }
+
+    .percent{
+        background-color: #ee384e;
+        color: white;
+        padding: .2rem .4rem;
+        border-radius:45%;
+        text-align: center;
+        width: 28%;
+    }
+
+    .product{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.4rem;
     }
 
     .swiper-container-2 img{
-        width: 100%;
+        width:100%;
         object-fit: contain;
+    }
+    .swiper-wrapper .last-box1 {
+    background-color: transparent;
+
+    }
+
+
+   .swiper-wrapper .last-box1 a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .last-box1 img:nth-child(1){
+        width:55%;
+    }
+    .last-box1 img:nth-child(2){
+        margin-top: -3.5rem;
+        width:65%;
+    }
+    .last-box1 img{
+        width: 75%;
+    }
+
+    .see-all{
+        border-top-left-radius: 6%;
+        border-bottom-left-radius: 6%;
+    }
+
+    .last-of-cards-offer{
+        border-top-right-radius: 6%;
+        border-bottom-right-radius: 6%;
+
+    }
+
+    .see-all a{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.6rem;
+        color: #000;
+    }
+
+    .see-all a i{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        color: #19bfd3;
+        border-radius: 50%;
+        border: .1rem solid #19bfd3;
+        padding: .9rem;
+    }
+
+    .last-box1 .see-more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        font-size: 1.68rem;
+    }
+    .last-box1 .see-more i{
+        margin: 0 1.1rem;
     }
 
 
