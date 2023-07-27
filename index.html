@@ -279,39 +279,84 @@
             <!-- incredible offers -->
             <div class="incredible-offers">
                     <!-- Slider main container -->
-    <div class="swiper-container-2 swiper" id="kalle-x">
+    <div class="swiper-container-2" id="swiper-incredible-offers">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
+        <div class="swiper-slide  swiper-slide-2">
+            <a href="#">
+                <i class="fas fa-arrow-left"></i>
+                <p>مشاهده همه</p>
+            </a>
+        </div>
       <!-- Slides -->
-      <div class="swiper-slide">
-        <img src="images/story-e2.jpeg" alt="">
+      <div class="swiper-slide  swiper-slide-2">
+        <img src="images/offers/incredible_offers/stone.webp" alt="">
+        <div class="price-and-discount">
+            <span>تومان</span>
+            <span> ۸۲,۰۰۰</span>
+            <span>۴۵%</span>
+        </div>
+        <span class="discount-price">15000</span> <!-- del -->
     </div>
-      <div class="swiper-slide">
-        <img src="images/offers/buy-methods/2-2.png" alt="">
+
+    <!--  -->
+
+    <div class="swiper-slide  swiper-slide-2">
+        <img src="images/offers/incredible_offers/stone.webp" alt="">
+        <div class="price-and-discount">
+            <span>تومان</span>
+            <span> ۸۲,۰۰۰</span>
+            <span>۴۵%</span>
+        </div>
+        <span class="discount-price">15000</span> <!-- del -->
+    </div>
+
+    <!--  -->
+
+    <div class="swiper-slide  swiper-slide-2">
+        <img src="images/offers/incredible_offers/stone.webp" alt="">
+        <div class="price-and-discount">
+            <span>تومان</span>
+            <span> ۸۲,۰۰۰</span>
+            <span>۴۵%</span>
+        </div>
+        <span class="discount-price">15000</span> <!-- del -->
+    </div>
+
+    <!--  -->
+
+    <div class="swiper-slide  swiper-slide-2">
+        <img src="images/offers/incredible_offers/stone.webp" alt="">
+        <div class="price-and-discount">
+            <span>تومان</span>
+            <span> ۸۲,۰۰۰</span>
+            <span>۴۵%</span>
+        </div>
+        <span class="discount-price">15000</span> <!-- del -->
+    </div>
+    <!--  -->
+      <div class="swiper-slide swiper-slide-2">
+        <img src="images/offers/incredible_offers/champo.webp" alt="">
 
       </div>
-      <div class="swiper-slide">
-        <img src="images/story-e2.jpeg" alt="">
+      <div class="swiper-slide swiper-slide-2">
+        <img src="images/offers/incredible_offers/iphone12.webp" alt="">
 
       </div>
+      <img src="images/offers/incredible_offers/box.png" alt="">
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
   </div>
             </div>
             <!-- End of incredible offers -->
 
+
     </div>
+
         <!-- End of offers -->
 
-        </div>
+    </div>
+
 
 
     <!-- Swiper Js -->
@@ -325,7 +370,7 @@
   // Optional parameters
   grabCursor:true,
   autoplay:{
-    delay:3500,
+    delay:12000,
     disableOnInteraction:false,
   },
   direction: 'horizontal',
@@ -342,15 +387,34 @@
     prevEl: '.swiper-button-prev',
   },
 
-});
 
- const swiper2=new Swiper('#kalle-x', {
-
-  direction: 'vertical',
-
- 
 
 });
+
+ const swiper2=new Swiper('#swiper-incredible-offers', {
+
+  direction: 'horizontal',
+  slidesPerView: 4.32,
+  spaceBetween: .001,
+  autoplay:{
+    delay:222500,
+
+  },
+
+
+  freeMode: {
+    enabled: true,
+    stick:true,
+    freeModeMomentum: true,
+  },
+  grabCursor:true,
+
+
+ });
+
+
+
+
     </script>
 
 </body>
