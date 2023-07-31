@@ -623,7 +623,62 @@ html{
     font-size: 3rem;
 }
 
-
 /* End of Digi Category */
+
+/* Off-cards */
+
+.off-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+
+.off-cards img{
+    width: 625px;
+    object-fit: contain;
+    border-radius: 2rem;
+}
+
+/* End of Off-cards */
+
+/* Digi-Offers */
+.digi-offers{
+    margin:2rem 0;
+    font-family: "IRANyekan",sans-serif;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.digi-offers h1{
+    font-weight: 500;
+}
+
+.offer-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    border: .2rem solid #000;
+    border-radius: 2rem;
+}
+
+.digi-offers img{
+    width: 160px;
+    padding: 2rem;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rebeccapurple;
+}
+/* End of Digi-Offers */
 
 
