@@ -678,6 +678,7 @@ html{
     align-items: center;
     flex-direction: column;
     background-color: rebeccapurple;
+    padding: 1rem 0;
 }
 /* End of Digi-Offers */
 
