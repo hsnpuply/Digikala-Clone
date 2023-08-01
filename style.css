@@ -771,6 +771,54 @@ html{
 .digital-products{
     margin:2rem 0;
     font-family: "IRANyekan",sans-serif;
-    padding: 1rem 2rem;
+    display: flex;
+    border: .1rem solid #e0e0e6;
+    border-radius: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    /* gap */
 }
+
+.product{
+    display: flex;
+    flex-direction: column;
+    border-left: .1rem solid #e0e0e6;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 2.4rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    line-height: 2.3;
+    font-size: 1.3rem;
+}
+.title p{
+    color: #767790;
+    font-size: 1.2rem;
+}
+
+.prod-imgs{
+    margin-left: 4rem;
+}
+
+.prod-imgs img{
+    width: 135px;
+    object-fit: contain;
+}
+
+.go-for-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #19bfd3;
+    margin:1.5rem 0 ;
+    gap: 1rem;
+    font-size: 1.4rem;
+}
+
 /* End of digital-products */
