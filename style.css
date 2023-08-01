@@ -655,6 +655,7 @@ html{
 
 .digi-offers h1{
     font-weight: 500;
+    margin: 2rem;
 }
 
 .offer-board{
@@ -662,14 +663,16 @@ html{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    border: .2rem solid #000;
+    gap: 4rem;
+    border: .1rem solid #e0e0e6;
     border-radius: 2rem;
 }
 
 .digi-offers img{
-    width: 160px;
+    width: 130px;
+    border-radius: 30%;
     padding: 2rem;
+    margin: 0 auto;
 }
 
 .box{
@@ -677,9 +680,26 @@ html{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rebeccapurple;
-    padding: 1rem 0;
+    font-size: 1.4rem;
 }
+
+
+.box:not(:first-child):not(:nth-child(8)):not(:nth-child(2)):not(:nth-child(9)){
+    border-left: .1rem solid #e0e0e6;
+    padding-left: 2rem;
+
+}
+
+.box:first-child{
+    border-right: .1rem solid #e0e0e6;
+
+}
+.box:nth-child(8){
+    border-right: .1rem solid #e0e0e6;
+
+}
+
+
 /* End of Digi-Offers */
 
 
