@@ -828,20 +828,20 @@ html{
 
 /* Digi-Plus */
 .digi-plus{
-    width: 100%;
-    height: 45vh;
+    height: 65vh;
     font-family: "IRANyekan",sans-serif;
     display: flex;
     border-radius: 2rem;
     justify-content: space-around;
     align-items: center;
     background-color: #941b80;
+    margin: 0 2rem;
 }
 
 .digi-plus-title{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     font-size: 1.7rem;
     color: #fff;
     width: 100%;
@@ -850,12 +850,17 @@ html{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right center;
+    margin-right: 4rem;
+    margin-top: 8rem;
 }
 .logo-digi{
     display: flex;
     width: 100%;
     justify-content: flex-end;
     margin: .7rem 0;
+}
+.logo-digi img{
+    width: 35%;
 }
 
 .ozviat{
@@ -871,6 +876,10 @@ html{
 
 }
 
+.digi-plus-service-p{
+    font-size: 1.5rem;
+}
+
 .ozviat i {
     margin: 0 1.2rem;
     font-size: 1.8rem;
@@ -878,23 +887,23 @@ html{
 
 
 
+
 .digi-fast-delivery{
-    height: 80%;
+    height:90%;
     width: 250%;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0 1.4rem;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-}
-.right,.left{
-    width: 100%;
+    border-radius: 1rem;
+    font-weight: 600;
 }
 .top-title .right {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 1.68rem;
+    font-size: 1.58rem;
 }
 .top-title i{
     margin: 0 1rem;
@@ -914,13 +923,39 @@ html{
 .top-title{
     width: 100%;
     display: flex;
-    margin: 1rem 0;
+    margin-bottom: 1.2rem;
+}
+.left,.right{
+    width: 100%;
+    margin: 1.5rem 1rem;
+
+}
+
+.left p {
+    font-size: 1.4rem;
 }
 
 .left{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+.left a p {
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+.fast-delivery-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.fast-delivery-products img{
+    width: 115px;
+    object-fit: contain;
 }
 
 /* End of Digi-Plus */
