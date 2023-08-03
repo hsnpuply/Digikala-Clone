@@ -781,7 +781,7 @@ html{
 
 
 
-.product:not(.smart-watch){
+.product:not(.smart-watch):not(.motherboards){
     display: flex;
     flex-direction: column;
     border-left: .1rem solid #e0e0e6;
@@ -959,3 +959,108 @@ html{
 }
 
 /* End of Digi-Plus */
+
+/* Digi Club  */
+.digi-club{
+    height: 14vh;
+    font-family: "IRANyekan",sans-serif;
+    display: flex;
+    border-radius: 2rem;
+    align-items: center;
+    margin:1rem 2rem;
+    background: linear-gradient(76.02deg,#35a6c8 33.32%,#007295 71.55%),radial-gradient(21.29% 87.33% at 50% 50.67%,#7cf2f6 0,#35a6c8 100%);
+}
+.digi-club .right img{
+    width: 20%;
+    object-fit: contain;
+}
+
+.club-cards{
+    width: 26rem;
+    border-radius:.5rem;
+    background-color: #fff;
+    margin: 0 .5rem;
+    padding: 0 2rem;
+}
+.club-cards a img{
+    margin-left: -1.9rem;
+}
+
+
+.club-cards a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: black;
+}
+
+.club-cards a i{
+    color: #007295;
+    margin: 0 1rem 0 -.5rem;
+}
+
+.jaize{
+    margin: 0 -1.5rem 0 0;
+}
+
+.club-cards img{
+    width: 55%;
+    object-fit: contain;
+}
+
+.digi-club .right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.digi-club .right img{
+    width: 80%;
+}
+/* End of Digi Club  */
+
+
+/* Digital products-2 */
+
+.swiper-container-4{
+    max-width: 100%;
+    height: 100vh;
+    padding-bottom: 6rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    border: .1rem solid #e0e0e6;
+}
+
+.top-side-best-seller{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide-4{
+    max-width: 18.3rem;
+    padding: .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: .1rem dotted #e0e0e6;
+}
+
+.swiper-slide-4 img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.topside-watch-all a{
+    color: #19bfd3;
+}
+
+/* End of Digital products-2 */
+
