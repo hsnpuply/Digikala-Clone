@@ -1254,3 +1254,28 @@ html{
 }
 
 /* End of  Blog section */
+
+/* footer-section */
+.footer-section{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100vh;
+    border-top: .42rem solid #e0e0e6;
+    font-family: "IRANyekan",sans-serif;
+}
+
+.footer-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.footer-heading a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 2rem;
+}
+/* End of footer-section */
