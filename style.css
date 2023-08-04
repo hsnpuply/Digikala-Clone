@@ -1142,7 +1142,7 @@ html{
     margin:2rem 1rem;
     font-family: "IRANyekan",sans-serif;
     padding: 1rem 2rem;
-    border: .2rem solid #000;
+    border: .1rem solid #e0e0e6;
     border-radius: 2rem;
 
 }
@@ -1186,3 +1186,71 @@ html{
     margin: 1.2rem 0 .5rem 0;
 }
 /* End of Best of offs and Sale */
+
+/* Blog section */
+.blog-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "IRANyekan",sans-serif;
+    margin:2.8rem 1rem 2rem 1rem;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+.title-blog-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+.more-contents-of-blog a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    color: #007295;
+    font-size: 1.25rem;
+    margin-left: 2.7rem;
+}
+.title-of-blog p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.blog-contents{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1.8rem 0;
+    gap: 1rem;
+}
+.blog-card a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: .1rem solid #e0e0e6;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.blog-card img{
+    width: 312px;
+    object-fit: contain;
+}
+
+
+.blog-content-desc{
+    text-align: right;
+    margin: 1.5rem 2.2rem;
+    padding: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 300;
+}
+
+/* End of  Blog section */
