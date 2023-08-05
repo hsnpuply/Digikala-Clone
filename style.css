@@ -1260,8 +1260,10 @@ html{
     margin-top: 5rem;
     width: 100%;
     height: 100vh;
-    border-top: .42rem solid #e0e0e6;
+    border-top: .22rem solid #e0e0e6;
     font-family: "IRANyekan",sans-serif;
+    padding: 1rem 2rem;
+
 }
 
 .footer-heading{
@@ -1271,11 +1273,252 @@ html{
     margin-top: 2rem;
 }
 
+.footer-heading img{
+    width: 120px;
+}
+
 .footer-heading a{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    color: #9e9fb1;
+    border: .1rem solid #9e9fb1;
+    padding: .7rem 1.5rem;
+    border-radius: .7rem;
 }
+.footer-heading a span{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* Support footer */
+.support{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    margin-top: 1.3rem;
+    gap: 2rem;
+}
+/* End of Support footer */
+
+/* footer Services  */
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-footer{
+    margin: 6rem 0;
+}
+
+.box-footer a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+    color: #202020;
+}
+
+/* End of footer Services  */
+
+/* Digi footer Subject */
+.digi-footer-subject{
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+
+}
+.digi-help{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 14rem;
+
+}
+.headings{
+    color: #202020;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.guide-digi,.customer-digi,.with-digi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 1.7rem 0;
+
+}
+
+
+.digi-links a{
+    color: #9e9fb1;
+    text-align: right;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+}
+
+.social-media p{
+    color: #3f4064;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+.all-socials img{
+    width:31px;
+}
+
+.all-socials{
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    margin:1.5rem 0 1rem 0;
+}
+
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+    color: #3f4064;
+    width: 35%;
+    height: 100%;
+    margin: 2rem 0;
+}
+
+.knowing-news{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.6rem;
+    font-weight: bold;
+
+}
+.form-let-us-know{
+    display: flex;
+    margin-top: 1.7rem;
+}
+
+.form-let-us-know input[type=text]{
+    background-color: #f1f2f4;
+    width: 26rem;
+    height: 4.9rem;
+    line-height: 2.5;
+    font-weight: 400;
+    font-size: 1.5rem;
+    border: none;
+    font-family: "IRANyekan",sans-serif;
+    padding: 0 1.2rem;
+    border-radius: .8rem;
+}
+.form-let-us-know button{
+    width: 6rem;
+    height: 4.9rem;
+    font-family: "IRANyekan",sans-serif;
+    background-color: #e0e0e6;
+    border: .1rem solid #e0e0e6;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: .7rem;
+    margin-right: 1.6rem;
+    font-weight: bold;
+
+    border: none;
+}
+
+
+/* End of Digi footer Subject */
+
+/* Footer Banner */
+.footer-banner{
+    height: 14vh;
+    font-family: "IRANyekan",sans-serif;
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin:1rem 0rem;
+    background-color: #3c4b6d;
+    padding: 1rem 0;
+    position: relative;
+}
+.footer-banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height:.22rem;
+    background-color: #e0e0e6;
+    bottom: -3.2rem;
+
+}
+
+
+
+.footer-banner .banner-container .left-banner img{
+    width: 150px;
+    object-fit: contain;
+}
+.banner-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5rem;
+}
+
+.left-banner{
+    display: flex;
+    margin: 0 2rem;
+}
+
+.more-apps-footer{
+    max-width: 48px;
+    max-height: 48px;
+    background-color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .4rem;
+    margin-right: 2.2rem;
+}
+
+.right-banner{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.right-banner p{
+    line-height: 2.7;
+    font-size: 2.5rem;
+    color: #f1f2f4;
+    margin-right:1.6rem;
+}
+.market-apps a{
+    margin: 0 .8rem;
+}
+
+
+/* End of Footer Banner */
+
+
 /* End of footer-section */
+
