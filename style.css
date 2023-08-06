@@ -1543,6 +1543,10 @@ justify-content: space-between;
     position: relative;
 }
 
+.content a{
+    color: #19bfd3;
+}
+
 .content::before{
     background: linear-gradient(180deg,hsla(0,0%,100%,0) 50%,#fff);
     content: "";
@@ -1556,7 +1560,12 @@ justify-content: space-between;
 .more-about-us-reveal{
     height: 57rem;
     overflow: visible;
+    &::before{content: none;}
+    /* har gah in class ezafe shod be DIV on moghe ::before
+    ro bardar!
+     */
 }
+
 
 .content-and-heading-title h1{
     font-size: 2.3rem;
