@@ -1517,13 +1517,7 @@ justify-content: space-between;
     margin: 0 .8rem;
 }
 
-.more-less-content a{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: #007295;
-    font-size: 1.7rem;
-}
+
 
 
 /* End of Footer Banner */
@@ -1537,10 +1531,59 @@ justify-content: space-between;
 .about-us-content{
     display: flex;
     flex-direction: column;
+    text-align: right;
+    margin-left: 4rem;
+    line-height: 1.7;
+
+}
+
+.content{
+    height: 17rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.content::before{
+    background: linear-gradient(180deg,hsla(0,0%,100%,0) 50%,#fff);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.more-about-us-reveal{
+    height: 57rem;
+    overflow: visible;
+}
+
+.content-and-heading-title h1{
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 2.1;
+    color: #5a5c7a;
+}
+
+.c-heading,.content-and-heading-title{
+    margin: .7rem 0;
+}
+
+.c-heading h2{
+    margin-bottom: .65rem;
+}
+
+.content-and-heading-title p,.c-heading p{
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #767790;
+}
+
+.c-heading h2{
+    color: #767790;
 }
 
 .all-logos{
-    width: 100%;
     height: 100%;
     gap: 1rem;
     display: flex;
@@ -1560,6 +1603,23 @@ justify-content: space-between;
     width: 75px;
     object-fit: contain;
 }
+
+.more-less-content{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: .5rem;
+}
+.more-less-content{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #007295;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
 /* End of about us */
 
 
