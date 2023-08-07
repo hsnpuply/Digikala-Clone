@@ -1526,6 +1526,8 @@ justify-content: space-between;
 .about-us{
     margin-top: 6.2rem;
     display: flex;
+    border-bottom: .22rem solid #e0e0e6;
+    padding-bottom: 1.5rem;
 }
 
 .about-us-content{
@@ -1565,7 +1567,6 @@ justify-content: space-between;
     ro bardar!
      */
 }
-
 
 .content-and-heading-title h1{
     font-size: 2.3rem;
@@ -1628,9 +1629,22 @@ justify-content: space-between;
     cursor: pointer;
 }
 
-
 /* End of about us */
 
+
+/* Copyright */
+.copyright{
+    font-size: 1.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.copyright p{
+    color: #767790;
+}
+/* End of Copyright */
 
 /* End of footer-section */
 
