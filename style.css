@@ -1634,17 +1634,42 @@ justify-content: space-between;
 
 /* Copyright */
 .copyright{
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4rem 0;
+    margin: 4rem 0 6rem 0;
 }
 
 .copyright p{
     color: #767790;
 }
 /* End of Copyright */
+
+/* Other services */
+.other-services{
+    margin: -2rem;
+    padding: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #f1f2f4;
+
+}
+
+.other-services a{
+    padding: 2.222rem;
+}
+
+.other-services a{
+    border-right:.1rem dotted #e0e0e6 ;
+    border-bottom: .1rem dotted #e0e0e6;
+
+}
+
+
+/* End of Other services */
 
 /* End of footer-section */
 
