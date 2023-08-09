@@ -1704,8 +1704,8 @@ justify-content: space-between;
     font-size: 1.50rem;
     color: #3f4064;
     border-radius: .6rem;
-    padding: 1.5rem;
 }
+
 
 .username-p p{
     margin-right: 1rem;
@@ -1718,7 +1718,6 @@ justify-content: space-between;
     height: 5.5rem;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
     border-bottom: .1rem solid #e0e0e6;
 }
 
@@ -1792,13 +1791,22 @@ justify-content: space-between;
     align-items: center;
 }
 
-.simple-contents,.d-plus-profile,.d-club-profile{
-    height: 4.5rem;
-    position: relative;
-    margin: 1rem .5rem;
-
-
+.simple-contents,.d-plus-profile,.d-club-profile,.top-content-userprofile{
+    padding:0 1.6rem;
 }
+.simple-contents,.d-plus-profile,.d-club-profile{
+
+    height: 5.5rem;
+    position: relative;
+}
+
+
+.simple-contents:hover,.d-plus-profile:hover,.d-club-profile:hover,.top-content-userprofile:hover{
+    background-color: #d8d1d1;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
 .simple-contents:not(:last-child)::after,.d-plus-profile::after,.d-club-profile::after{
     content: "";
     position: absolute;
