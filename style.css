@@ -1698,29 +1698,63 @@ justify-content: space-between;
     width: 25rem;
     left: 6rem;
     top:4rem;
-    background-color: #767790;
-    z-index: 999;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.3);    z-index: 999;
     font-family: "IRANyekan",sans-serif;
-    font-size: 1.5rem;
-
+    font-size: 1.50rem;
+    color: #3f4064;
+    border-radius: .6rem;
+    padding: 1.5rem;
 }
+
+.username-p p{
+    margin-right: 1rem;
+}
+
+
 .top-content-userprofile{
     display: flex;
     width: 100%;
     height: 5.5rem;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     border-bottom: .1rem solid #e0e0e6;
 }
+
+.top-content-userprofile .left-side-profile i::before{
+    font-size: 2.5rem;
+    color: #9e9fb1;
+}
+.emtiaz-p{
+    color: #9e9fb1;
+    margin-right: .55rem;
+}
+.digi-plus-p{
+    color: #9e9fb1;
+}
+.left-side-dplus-panel{
+    color: #b12ba4;
+}
+
+.orderz-profile-panel i{
+    color: #3f4064;
+
+}
+
 
 .right-side-profile{
     display: flex;
     align-items: center;
 }
 
+.eshterak{
+    margin-left:.5rem;
+}
+
 .username-p{
-    font-size: 1.66rem;
+    font-size: 1.69rem;
+    margin-right: .7rem;
 }
 
 .other-content-panel{
@@ -1731,13 +1765,22 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.2rem;
 }
+
 
 .left-side-dclub-panel,.right-side-dclub-panel,
 .left-side-dplus-panel,.right-side-dplus-panel
 {
     display: flex;
     align-items: center;
+}
+.right-side-dclub-panel p,.right-side-dplus-panel p{
+    margin-right: 2rem;
+
+}
+.simple-contents p{
+    margin-right: 2rem;
 }
 
 
@@ -1749,8 +1792,19 @@ justify-content: space-between;
     align-items: center;
 }
 
+.simple-contents,.d-plus-profile,.d-club-profile{
+    height: 4.5rem;
+    position: relative;
+    margin: 1rem .5rem;
 
 
-
-
-
+}
+.simple-contents:not(:last-child)::after,.d-plus-profile::after,.d-club-profile::after{
+    content: "";
+    position: absolute;
+    height: .1rem;
+    background-color: #e0e0e6;
+    bottom: -.2rem;
+    width: 86%;
+    right: 3rem;
+}
