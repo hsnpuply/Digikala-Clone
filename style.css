@@ -111,103 +111,6 @@ html{
 }
 
 
-.user-interface{
-    width:20rem;
-    font-family: "IRANyekan",sans-serif;
-    font-size: 1.2rem;
-    /* width: 0;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    */
-    background-color: #5c5b5b;
-    color: #000;
-    position: absolute;
-    left: -1.6rem;
-    top: 4.2rem;
-    z-index: 99;
-    box-shadow: 0 1px 1px rgba(0,0,0,1.54),0 4px 8px rgba(0,0,0,.7);
-    display: flex;
-    flex-direction: column;
-}
-
-.emtiazha{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.emtiaz-p{
-    color: #9e9fb1;
-    margin-right: .5rem;
-}
-
-
-.user-interface i{
-    font-size: .8rem;
-}
-.user-name,.digiclub-profile-name,.digi-plus-points-name,.eshterak{
-    display: flex;
-    align-items: center;
-}
-
-.eshterak{
-    font-size: 1rem;
-}
-
-.avatar-and-name{
-    margin-right: -1.1rem;
-}
-
-
-.profile-row{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    position: relative;
-    border-bottom: .1rem solid #e0e0e6;
-    height: 4.3rem;
-}
-.user-name{
-    height: 5rem;
-    background-color: #19bfd3;
-    font-size: 1.258rem;
-}
-
-
-.test-end{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 2rem;
-    font-size: 1rem;
-}
-.test-end .fas{
-    font-size: 2.5rem;
-}
-
-.test-end p{
-    margin: 0 3rem;
-}
-/*
-.profile-row::after{
-    content:'';
-    width: 80%;
-    height: .1rem;
-    background-color: #e0e0e6;
-    bottom: -4rem;
-    left: 4rem;
-    position: absolute;
-} */
-
-
-.avatar-and-name,.digiclub-profile-name,.digi-plus-points-name{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
 
 
 
@@ -1785,74 +1688,69 @@ justify-content: space-between;
 /* End of footer-section */
 
 
-/* labrator profile panel */
+/* profile panel */
 
-.top-username{
+.profile-panel{
     display: flex;
-    justify-content: space-between;
-    height: 4rem;
+    flex-direction: column;
     align-items: center;
+    position: absolute;
+    width: 25rem;
+    left: 6rem;
+    top:4rem;
+    background-color: #767790;
+    z-index: 999;
+    font-family: "IRANyekan",sans-serif;
+    font-size: 1.5rem;
+
+}
+.top-content-userprofile{
+    display: flex;
+    width: 100%;
+    height: 5.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
     border-bottom: .1rem solid #e0e0e6;
-    margin: 1rem 0;
 }
-.right-side-panel{
+
+.right-side-profile{
     display: flex;
     align-items: center;
 }
 
-/* digiclub panel section */
-
-.digi-club-profile-panel{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.icon-profile-panel{
-    display: flex;
-    align-items: center;
-
-}
-
-.right-side-dclub{
-    justify-content: flex-start;
-}
-.content-digiclub-panel,.left--side{
-    display: flex;
-    align-items: center;
-}
-
-.content-digiclub-panel{
-    justify-content: space-between;
-}
-
-
-.other-content-panel{
-    height: 3rem;
+.username-p{
+    font-size: 1.66rem;
 }
 
 .other-content-panel{
+    width: 100%;
+}
+
+.d-club-profile,.d-plus-profile{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.left-side-dclub-panel,.right-side-dclub-panel,
+.left-side-dplus-panel,.right-side-dplus-panel
+{
+    display: flex;
     align-items: center;
 }
 
-.icon-profile-panel{
-    display: flex;
-    gap:1.5rem
-}
 
-.other-content-panel .icon-profile-panel i::before{
-    font-size: 2rem;
-}
-.left--side .fa-angle-left:before{
+/* simple-contents */
+
+.simple-contents{
     display: flex;
-    align-items: center;
-    font-size: 1.6rem;
-    margin-right: .8rem;
-}
-.simple-content{
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
+    align-items: center;
 }
+
+
+
+
+
+
