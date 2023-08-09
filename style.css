@@ -110,6 +110,12 @@ html{
     position: relative;
 }
 
+.userInfo-Background{
+    background-color: rgba(239, 57, 78,.3);
+    border-radius: 20%;
+
+}
+
 
 
 
@@ -1704,6 +1710,11 @@ justify-content: space-between;
     font-size: 1.50rem;
     color: #3f4064;
     border-radius: .6rem;
+    opacity: 0;
+}
+
+.shown{
+    opacity: 1;
 }
 
 
