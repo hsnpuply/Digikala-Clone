@@ -30,13 +30,19 @@ html{
 .navbar{
     display:flex;
     flex-direction:column;
+    background-color: #ffffff;
+    border-bottom: .1rem solid #e0e0e6;
+    box-shadow: 0 .01rem .7rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
 }
 .top-nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0rem 0;
-    background-color: #8b8889;
 }
 
 
@@ -54,6 +60,7 @@ html{
     position: relative;
     margin-left: auto;
 }
+
 .search-content{
     margin: 1rem 0;
     width: 61.2rem;
@@ -71,6 +78,9 @@ html{
     font-size: 1.7rem;
 }
 
+.search-box i::before {
+    color: #a8a9ba;
+}
 .fa-search{
     color: rgb(78, 74, 74);
     position: absolute;
@@ -129,8 +139,25 @@ html{
     justify-content: space-around;
     height: 5.5rem;
     font-family: "IRANyekan",sans-serif;
-    background-color: #d8cdce;
+    background-color: #ffffff;
+    transition: all .5s;
+
 }
+.navbar-full-line-scroll-down-hide{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    transition: all .5s;
+
+}
+
+.navbar-full-line-scroll-top-shown{
+    opacity: 1;
+    visibility: visible;
+    height: 5.5rem;
+    transition: all .5s;
+}
+
 
 .navbar-full-line a{
     color: #5a5c7a;
@@ -282,7 +309,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #5a5c7a;
+    margin-bottom: 1rem;
 }
 .all-story-elements{
     display: flex;
