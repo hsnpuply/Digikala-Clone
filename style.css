@@ -1614,7 +1614,7 @@ justify-content: space-between;
 }
 
 .more-about-us-reveal{
-    height: 57rem;
+    height: 60rem;
     overflow: visible;
     &::before{content: none;}
     /* har gah in class ezafe shod be DIV on moghe ::before
@@ -1668,15 +1668,13 @@ justify-content: space-between;
     object-fit: contain;
 }
 
-.more-less-content{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    margin-top: .5rem;
-}
+
 .more-less-content{
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: .5rem;
     gap: 1rem;
     color: #007295;
     font-size: 1.3rem;
@@ -1861,3 +1859,26 @@ justify-content: space-between;
     width: 86%;
     right: 3rem;
 }
+
+
+/* Supportbutton */
+.support-button{
+    width:5rem;
+    height:5rem;
+    position: fixed;
+    bottom: 1.4rem;
+    left: 5rem;
+    background-color: #ef4056;
+    border-radius:50%;
+    border: none;
+    cursor: pointer;
+    z-index: 100000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.support-button img{
+
+}
+/* End of Supportbutton */

@@ -55,7 +55,7 @@ window.addEventListener('scroll',()=>{
     }
 }
 
-     lastScrolled = window.scrollY;
+    lastScrolled = window.scrollY;
 
 
 });
