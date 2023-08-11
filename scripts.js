@@ -3,6 +3,9 @@ const btnAboutUs_P = document.querySelector('.more-less-content p');
 const contentAboutUs = document.querySelector('.content');
 
 const navbar_full_line = document.querySelector('.navbar-full-line');
+const navbar = document.querySelector('.navbar');
+const storys = document.querySelector('.storys');
+const offers = document.querySelector('.offers');
 
 
 let flagAboutUs=false;
@@ -39,15 +42,19 @@ window.addEventListener('scroll',()=>{
 
         navbar_full_line.classList.add('navbar-full-line-scroll-down-hide');
         navbar_full_line.classList.remove('navbar-full-line-scroll-top-shown');
-
+        navbar.classList.add('navbar-scrolled-down');
 
     }else if(window.scrollY < lastScrolled - 10){
         // console.log('to the top');
         // userInfo.style.backgroundColor='lightblue';
+
         navbar_full_line.classList.add('navbar-full-line-scroll-top-shown');
         navbar_full_line.classList.remove('navbar-full-line-scroll-down-hide');
-
+        if(window.scrollY + window.innerHeight <= offers.offsetTop + offers.offsetHeight / 2.1){
+            navbar.classList.remove('navbar-scrolled-down')
     }
+}
+
      lastScrolled = window.scrollY;
 
 

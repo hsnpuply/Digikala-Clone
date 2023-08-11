@@ -33,11 +33,13 @@ html{
     background-color: #ffffff;
     border-bottom: .1rem solid #e0e0e6;
     box-shadow: 0 .01rem .7rem;
+    width: 100%;
+    z-index: 999;
+}
+.navbar-scrolled-down{
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
-    z-index: 999;
 }
 .top-nav{
     display: flex;
@@ -141,21 +143,26 @@ html{
     font-family: "IRANyekan",sans-serif;
     background-color: #ffffff;
     transition: all .5s;
-
 }
+
+
+
+
 .navbar-full-line-scroll-down-hide{
     opacity: 0;
     visibility: hidden;
     height: 0;
-    transition: all .5s;
-
+    transition: all .6s;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 .navbar-full-line-scroll-top-shown{
     opacity: 1;
     visibility: visible;
     height: 5.5rem;
-    transition: all .5s;
+    transition: all .6s;
 }
 
 
