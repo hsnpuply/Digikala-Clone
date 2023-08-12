@@ -35,6 +35,7 @@ html{
     box-shadow: 0 .01rem .7rem;
     width: 100%;
     z-index: 999;
+    padding-top: 1.5rem;
 }
 .navbar-scrolled-down{
     position: fixed;
@@ -72,12 +73,12 @@ html{
     border-radius: .1rem;
     font-family: "IRANyekan",sans-serif;
     border-radius: .5rem;
-    font-size: 1rem;
 }
 
 .search-box input{
     padding: .8rem 4rem;
     font-size: 1.7rem;
+    color: #767790;
 }
 
 .search-box i::before {
@@ -1873,12 +1874,108 @@ justify-content: space-between;
     border: none;
     cursor: pointer;
     z-index: 100000;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.support-button img{
 
-}
 /* End of Supportbutton */
+
+
+/* focused-search-bar */
+    .focused-search-box{
+        font-family: "IRANyekan",sans-serif;
+        position: absolute;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        width: 100%;
+        top: 5.2rem;
+        border-radius: 2rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        opacity: 0;
+        transition: all .5s;
+}
+
+
+
+.focused-search-box-activated{
+    transition: all .5s ;
+    opacity: 1;
+}
+
+
+
+.pic-focused{
+    margin: 1.6rem 1rem 1rem 1rem;
+}
+
+.popular-searches{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 2rem;
+    width: 100%;
+}
+
+.heading-focused-search{
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2.2rem;
+}
+
+.heading-focused-search p{
+    color:#3f4064;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.fire-search{
+    font-size: 2.6rem;
+}
+
+
+.suggest-content-searches{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 1.5rem;
+    height: 7rem;
+    justify-content: flex-end;
+    gap: .5rem;
+}
+
+.search-box-content {
+    font-weight: 700;
+    line-height: 2.15;
+    padding: .3rem .35rem;
+    cursor: pointer;
+    color:#3f4064;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    border: .1rem solid #eaeaee;
+    border-radius: 2rem;
+    overflow: hidden;
+    gap: .7rem;
+}
+
+
+/* End of focused-search-bar */
+
+/* Focus search bar */
+.body-blur:not(.navbar){
+    filter: blur(2px);
+}
+/* end of Focus search bar */
+
+
+
+

@@ -8,6 +8,11 @@ const storys = document.querySelector('.storys');
 const offers = document.querySelector('.offers');
 
 
+const searchBoxInput = document.querySelector('.search-box input');
+const focusedSearchBox = document.querySelector('.focused-search-box');
+const container = document.querySelector('.container');
+
+
 let flagAboutUs=false;
 btnAboutUs.addEventListener('click',()=>{
     flagAboutUs==false ? (btnAboutUs_P.textContent='بستن',flagAboutUs=true) :(btnAboutUs_P.textContent='مشاهده بیشتر',flagAboutUs=false);
@@ -60,3 +65,15 @@ window.addEventListener('scroll',()=>{
 
 });
 
+
+
+
+searchBoxInput.addEventListener('focus',()=>{
+    focusedSearchBox.classList.add('focused-search-box-activated')
+    container.classList.add('body-blur')
+})
+searchBoxInput.addEventListener('blur',()=>{
+    focusedSearchBox.classList.remove('focused-search-box-activated')
+    container.classList.remove('body-blur')
+
+})
