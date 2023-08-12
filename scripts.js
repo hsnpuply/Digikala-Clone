@@ -11,6 +11,9 @@ const offers = document.querySelector('.offers');
 const searchBoxInput = document.querySelector('.search-box input');
 const focusedSearchBox = document.querySelector('.focused-search-box');
 const container = document.querySelector('.container');
+const OtherContentWhenFocusedSearchBox = document.querySelector('.focused-search-box-container');
+const searchContent = document.querySelector('.search-content');
+
 
 
 let flagAboutUs=false;
@@ -32,6 +35,11 @@ userInfo.addEventListener('click',()=>{
     profilePanel.classList.toggle('shown')
 })
 
+
+userInfo.addEventListener('blur',()=>{
+    userInfo.classList.remove('userInfo-Background')
+    profilePanel.classList.remove('shown')
+})
 
 
 // Navbar scrolling
@@ -70,10 +78,20 @@ window.addEventListener('scroll',()=>{
 
 searchBoxInput.addEventListener('focus',()=>{
     focusedSearchBox.classList.add('focused-search-box-activated')
-    container.classList.add('body-blur')
+    searchContent.classList.add('search-content-activtion')
+    document.body.style.overflow='hidden';
+    OtherContentWhenFocusedSearchBox.classList.add('focused-search-box-container-shown')
+
+    navbar_full_line.classList.add('navbar-full-line-z-index');
+
 })
 searchBoxInput.addEventListener('blur',()=>{
     focusedSearchBox.classList.remove('focused-search-box-activated')
     container.classList.remove('body-blur')
+    document.body.style.overflow='scroll';
+    searchContent.classList.remove('search-content-activtion')
+    OtherContentWhenFocusedSearchBox.classList.remove('focused-search-box-container-shown')
+    navbar_full_line.classList.remove('navbar-full-line-z-index');
+
 
 })

@@ -34,7 +34,7 @@ html{
     border-bottom: .1rem solid #e0e0e6;
     box-shadow: 0 .01rem .7rem;
     width: 100%;
-    z-index: 999;
+    z-index: 21999;
     padding-top: 1.5rem;
 }
 .navbar-scrolled-down{
@@ -70,16 +70,22 @@ html{
     height: 4.2rem;
     background-color: #e3e3e9dc;
     border: none;
-    border-radius: .1rem;
     font-family: "IRANyekan",sans-serif;
     border-radius: .5rem;
 }
+
+.search-content-activtion{
+    background-color: #fff;
+    outline: .3rem solid #e3e3e9dc;
+}
+
 
 .search-box input{
     padding: .8rem 4rem;
     font-size: 1.7rem;
     color: #767790;
 }
+
 
 .search-box i::before {
     color: #a8a9ba;
@@ -144,6 +150,7 @@ html{
     font-family: "IRANyekan",sans-serif;
     background-color: #ffffff;
     transition: all .5s;
+    z-index: 1001;
 }
 
 
@@ -1738,7 +1745,8 @@ justify-content: space-between;
     left: 6rem;
     top:4rem;
     background-color: #fff;
-    box-shadow: 0 1px 1px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.3);    z-index: 999;
+    box-shadow: 0 1px 1px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.3);
+    z-index: 999;
     font-family: "IRANyekan",sans-serif;
     font-size: 1.50rem;
     color: #3f4064;
@@ -1892,26 +1900,29 @@ justify-content: space-between;
         align-items: center;
         justify-content: center;
         background-color: #fff;
-        width: 100%;
-        top: 5.2rem;
+        width: 101%;
+        top: 5.5rem;
         border-radius: 2rem;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
         opacity: 0;
         transition: all .5s;
-}
+        z-index:1;
+        box-shadow: -0.2rem 0.7rem 1rem #000;
+    }
 
 
 
 .focused-search-box-activated{
     transition: all .5s ;
     opacity: 1;
+    z-index: 9991;
 }
-
 
 
 .pic-focused{
     margin: 1.6rem 1rem 1rem 1rem;
+    cursor: pointer;
 }
 
 .popular-searches{
@@ -1946,7 +1957,7 @@ justify-content: space-between;
     width: 100%;
     display: flex;
     align-items: center;
-    padding-right: 1.5rem;
+    padding-right: 1rem;
     height: 7rem;
     justify-content: flex-end;
     gap: .5rem;
@@ -1965,15 +1976,31 @@ justify-content: space-between;
     border-radius: 2rem;
     overflow: hidden;
     gap: .7rem;
+    cursor: pointer;
+    border-top: .3rem solid #19bfd3;
 }
 
 
 /* End of focused-search-bar */
 
 /* Focus search bar */
-.body-blur:not(.navbar){
-    filter: blur(2px);
+
+.focused-search-box-container{
+    width: 100%;
+    height:90%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: 1000;
+    visibility: hidden;
 }
+.focused-search-box-container-shown{
+    opacity: 1;
+    visibility: visible;
+}
+
 /* end of Focus search bar */
 
 
