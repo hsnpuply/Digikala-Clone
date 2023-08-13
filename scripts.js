@@ -100,3 +100,37 @@ userInfo.addEventListener('click',(e)=>{
     userInfo.classList.toggle('userInfo-Background')
     profilePanel.classList.toggle('shown')
 })
+
+
+
+// email validation
+
+const email_input = document.querySelector('.input-email');
+const email_news_text = document.querySelector('.email-for-news');
+const submit_btn = document.querySelector('.submit-btn');
+
+window.addEventListener('load',()=>{
+    email_input.addEventListener('keydown',()=>{
+        ValidateEmail(email_input);
+    })
+})
+
+
+
+function ValidateEmail(inputText)
+{
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ if(inputText.value.match(mailformat))
+{
+    email_news_text.textContent='ایمیل وارد شده صحیح میباشد'
+    email_news_text.style.color='green'
+
+return true;
+}
+else
+{
+    email_news_text.textContent='ایمیل وارد شده صحیح نیست'
+    email_news_text.style.color='red'
+return false;
+}
+}

@@ -373,7 +373,6 @@ html{
 /* Offers */
 .offers{
     width: 100%;
-    background:#656ff3;
     padding: 1rem 2rem;
     font-family: "IRANyekan",sans-serif;
 }
@@ -639,7 +638,8 @@ html{
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5rem;
 }
 
 .cards img{
@@ -729,7 +729,7 @@ html{
     justify-content: center;
     height: 40rem;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 5rem;
     border: .1rem solid #e0e0e6;
     border-radius: 2rem;
 }
@@ -826,11 +826,6 @@ html{
 
 /* End of popular brands */
 
-/* Off-cards-2 */
-.off-cards-2{
-
-}
-/* End of Off-cards-2 */
 
 /* digital-products */
 .digital-products{
@@ -1506,7 +1501,7 @@ justify-content: space-between;
     padding: 0 1.2rem;
     border-radius: .8rem;
 }
-.form-let-us-know button{
+.form-let-us-know input[type=submit]{
     width: 6rem;
     height: 4.9rem;
     font-family: "IRANyekan",sans-serif;
@@ -1909,7 +1904,7 @@ justify-content: space-between;
         font-family: "IRANyekan",sans-serif;
         position: absolute;
         z-index: 100;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -1931,6 +1926,7 @@ justify-content: space-between;
     transition: all .5s ;
     opacity: 1;
     z-index: 9991;
+    display: flex;
 }
 
 
@@ -1990,7 +1986,6 @@ justify-content: space-between;
     border-radius: 2rem;
     overflow: hidden;
     gap: .7rem;
-    cursor: pointer;
     border-top: .3rem solid #19bfd3;
 }
 
@@ -2022,10 +2017,9 @@ justify-content: space-between;
 /* email validation */
 .email-for-news{
     height: 5rem;
-    color: red;
     position:absolute;
     top: 6rem;
-    left: 10rem;
+    left: 12rem;
 }
 
 /* End of email validation */
