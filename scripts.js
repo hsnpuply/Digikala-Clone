@@ -27,19 +27,6 @@ btnAboutUs.addEventListener('click',()=>{
 
 
 
-const userInfo = document.querySelector('.userInfo');
-const profilePanel = document.querySelector('.profile-panel');
-
-userInfo.addEventListener('click',()=>{
-    userInfo.classList.toggle('userInfo-Background')
-    profilePanel.classList.toggle('shown')
-})
-
-
-userInfo.addEventListener('blur',()=>{
-    userInfo.classList.remove('userInfo-Background')
-    profilePanel.classList.remove('shown')
-})
 
 
 // Navbar scrolling
@@ -84,14 +71,32 @@ searchBoxInput.addEventListener('focus',()=>{
 
     navbar_full_line.classList.add('navbar-full-line-z-index');
 
+    userInfo.classList.remove('userInfo-Background')
+    profilePanel.classList.remove('shown')
+
 })
 searchBoxInput.addEventListener('blur',()=>{
     focusedSearchBox.classList.remove('focused-search-box-activated')
     container.classList.remove('body-blur')
-    document.body.style.overflow='scroll';
+    document.body.style.overflowY='scroll';
     searchContent.classList.remove('search-content-activtion')
     OtherContentWhenFocusedSearchBox.classList.remove('focused-search-box-container-shown')
     navbar_full_line.classList.remove('navbar-full-line-z-index');
 
+    userInfo.classList.remove('userInfo-Background')
+    profilePanel.classList.remove('shown')
 
+})
+
+
+
+
+
+const userInfo = document.querySelector('.userInfo');
+const profilePanel = document.querySelector('.profile-panel');
+const userActivity = document.querySelector('.user-activity');
+
+userInfo.addEventListener('click',(e)=>{
+    userInfo.classList.toggle('userInfo-Background')
+    profilePanel.classList.toggle('shown')
 })
