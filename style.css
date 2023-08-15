@@ -373,7 +373,7 @@ html{
 /* Offers */
 .offers{
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 6rem;
     font-family: "IRANyekan",sans-serif;
 }
 /* Buy methods */
@@ -382,7 +382,7 @@ html{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    margin: 2.5rem 0;
+    margin: 2.85rem 0;
 }
 .buy-methods a{
     color: #202020;
@@ -635,25 +635,27 @@ html{
 /* Cards */
 .cards{
     width: 100%;
-    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5rem;
+    gap: 2rem;
+    margin-top: 1.25rem;
 }
 
-.cards img{
-    width:300px;
-    object-fit: contain;
-    border-radius: 2rem;
+.card_ img{
+    width:328px;
+    height: 236px;
+    border-radius: 1.6rem;
+    object-fit: cover;
 }
+
 /* End of Cards */
 
 /* Digi Category */
 .digi-category{
-    margin:2rem 0;
+    margin:2.8rem 0;
     font-family: "IRANyekan",sans-serif;
-    padding: 1rem 2rem;
+    padding: 1rem 15rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -664,16 +666,24 @@ html{
 
 .category-products{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 4rem;
-    margin: 0 2rem;
-    line-height: 2.17;
+    gap: 6rem;
+    row-gap: 3.2rem;
+    margin: 3rem 1rem 2rem 1rem;
 }
 
+.category-products a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #080a38;
+
+}
 .category-products img{
-    width: 150px;
+    width: 100px;
 }
 
 .category-products p{
@@ -688,6 +698,8 @@ html{
     font-size: 3rem;
 }
 
+
+
 /* End of Digi Category */
 
 /* Off-cards */
@@ -701,7 +713,7 @@ html{
 }
 
 .off-cards img{
-    width: 625px;
+    width: 675px;
     object-fit: contain;
     border-radius: 2rem;
 }
