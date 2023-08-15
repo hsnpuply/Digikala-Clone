@@ -35,7 +35,7 @@ html{
     box-shadow: 0 .01rem .7rem;
     width: 100%;
     z-index: 21999;
-    padding-top: 1.5rem;
+    padding-top: .35rem;
 }
 .navbar-scrolled-down{
     position: fixed;
@@ -283,7 +283,7 @@ html{
     left: 0;
     bottom: -1.5rem; /* Adjust this value to control the distance between the text and the border */
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #ee384e; /* Change this color to your desired border color */
     transform: scaleX(0) translate(-50%,50%);
     transition: transform 0.1s ease-in-out;
@@ -305,7 +305,7 @@ html{
     left: 0;
     bottom: -1.5rem; /* Adjust this value to control the distance between the text and the border */
     width: 100%;
-    height: 2px;
+    height: 3px;
     background-color: #ee384e; /* Change this color to your desired border color */
     transform: scaleX(0) translate(-50%,50%);
     transition: transform 0.1s ease-in-out;
@@ -325,7 +325,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2.5rem;
 }
 .all-story-elements{
     display: flex;
@@ -375,6 +375,10 @@ html{
     width: 100%;
     padding: 1rem 6rem;
     font-family: "IRANyekan",sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* Buy methods */
 .buy-methods{
@@ -413,8 +417,13 @@ html{
 /* End of buy methods */
 
 /* Incredible offers */
+    .incredible-offers{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .swiper-container-2{
-        max-width: 100%;
+        max-width: 75.45%;
         height: 31rem;
         padding: 2rem;
         overflow: hidden;
@@ -547,17 +556,21 @@ html{
 
 /* SuperMarket */
 
+.content-supermakret{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .supermarketi{
-    width: 100%;
+    width:84%;
     height: 10.5rem;
     margin-top: 1.4rem;
     background:
     url(images/offers/supermarketi/freshPattern.svg) left center / 100% 300% no-repeat,
     linear-gradient(to right,rgb(216, 205, 206),#eef1f0);
     border-radius: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
 }
 
 .left-side{
@@ -640,10 +653,11 @@ html{
     justify-content: center;
     gap: 2rem;
     margin-top: 1.25rem;
+    padding-bottom: 1.3rem;
 }
 
 .card_ img{
-    width:328px;
+    width:350px;
     height: 236px;
     border-radius: 1.6rem;
     object-fit: cover;
@@ -661,7 +675,7 @@ html{
     flex-direction: column;
 }
 .digi-category h1{
-    font-weight: 500;
+    margin-bottom: 1.25rem;
 }
 
 .category-products{
@@ -669,9 +683,9 @@ html{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 6rem;
+    gap: 9rem;
     row-gap: 3.2rem;
-    margin: 3rem 1rem 2rem 1rem;
+    margin: 3rem 1rem 2.8rem 1rem;
 }
 
 .category-products a{
@@ -683,11 +697,14 @@ html{
 
 }
 .category-products img{
-    width: 100px;
+    width: 120px;
 }
 
 .category-products p{
     font-size: 1.3rem;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    color:#080a38;
 }
 
 .category{
@@ -713,7 +730,7 @@ html{
 }
 
 .off-cards img{
-    width: 675px;
+    width: 740px;
     object-fit: contain;
     border-radius: 2rem;
 }
@@ -722,9 +739,8 @@ html{
 
 /* Digi-Offers */
 .digi-offers{
-    margin:2rem 0;
+    margin:2rem 19rem;
     font-family: "IRANyekan",sans-serif;
-    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -741,16 +757,21 @@ html{
     justify-content: center;
     height: 40rem;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 6rem;
     border: .1rem solid #e0e0e6;
     border-radius: 2rem;
 }
 
 .digi-offers img{
-    width: 130px;
+    width: 110px;
     border-radius: 30%;
     padding: 2rem;
     margin: 0 auto;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box a{
@@ -759,6 +780,11 @@ html{
     align-items: center;
     flex-direction: column;
     font-size: 1.4rem;
+    color: #080a38;
+}
+.box a p{
+    max-width: 9.5rem;
+    text-align: center;
 }
 
 
@@ -777,6 +803,16 @@ html{
 
 }
 
+.box-offer-1 a{
+    margin-right: 2rem;
+    padding: 1rem 2rem;
+}
+
+.box-offer-8 a{
+    margin-right: 2rem;
+    padding: 1rem 2.5rem;
+}
+
 
 /* End of Digi-Offers */
 
@@ -784,9 +820,12 @@ html{
 /* popular brands */
 
 .popular-brands{
-    margin:2rem 0;
+    margin:1.8rem 0;
     font-family: "IRANyekan",sans-serif;
     padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .top-side{
@@ -797,16 +836,27 @@ html{
 
 .top-side h1{
     font-weight: 600;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 .swiper-container-3{
-    max-width: 100%;
+    max-width: 81.5%;
     height: 20rem;
     padding-bottom: 6rem;
     overflow: hidden;
     /* background:linear-gradient(to top,#1acc40,#4db932); */
     border-radius: 2rem;
     border: .1rem solid #e0e0e6;
+}
+
+.swiper-container-3 .top-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 1.4rem;
+}
+.swiper-container-3 .top-side i::before {
+    color: #f9bc00;
+    font-size: 1.9rem;
 }
 
 
@@ -826,6 +876,7 @@ html{
     border-left: .1rem dotted #e0e0e6;
 }
 
+
 .swiper-slide-3 img{
     width: 100%;
     object-fit: contain;
@@ -836,12 +887,20 @@ html{
 }
 
 
+
 /* End of popular brands */
 
 
 /* digital-products */
+.digital-content-products{
+    margin: 0 auto;
+    width:98.5%;
+    margin-bottom: 3rem;
+}
+
 .digital-products{
-    margin:2rem;
+    width: 82.1%;
+    margin:2rem auto;
     font-family: "IRANyekan",sans-serif;
     display: flex;
     border: .1rem solid #e0e0e6;
@@ -882,10 +941,11 @@ html{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 4rem;
 }
 
 .prod-imgs img{
-    width: 135px;
+    width: 115px;
     object-fit: contain;
 }
 
@@ -904,14 +964,15 @@ html{
 
 /* Digi-Plus */
 .digi-plus{
-    height: 65vh;
+    width: 81.5%;
+    height: 40vh;
     font-family: "IRANyekan",sans-serif;
     display: flex;
     border-radius: 2rem;
     justify-content: space-around;
     align-items: center;
     background-color: #941b80;
-    margin: 0 2rem;
+    margin: 0 auto;
 }
 
 .digi-plus-title{
@@ -968,7 +1029,7 @@ html{
     height:83%;
     width: 250%;
     font-size: 1.3rem;
-    margin: 2.4rem  1.4rem 0 1.4rem;
+    margin: 0  1.4rem 0 1.4rem;
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -1027,11 +1088,12 @@ html{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:5rem;
+    gap: 9rem;
+    row-gap: 5rem;
 }
 
 .fast-delivery-products img{
-    width: 115px;
+    width: 90px;
     object-fit: contain;
 }
 
@@ -1039,12 +1101,13 @@ html{
 
 /* Digi Club  */
 .digi-club{
-    height: 14vh;
+    height: 9.5vh;
+    width: 81.7%;
     font-family: "IRANyekan",sans-serif;
     display: flex;
     border-radius: 2rem;
     align-items: center;
-    margin:1rem 2rem;
+    margin:1rem auto 2rem auto;
     background: linear-gradient(76.02deg,#35a6c8 33.32%,#007295 71.55%),radial-gradient(21.29% 87.33% at 50% 50.67%,#7cf2f6 0,#35a6c8 100%);
 }
 .digi-club .right img{
@@ -1101,9 +1164,8 @@ html{
 /* Digital products-2 */
 
 .swiper-container-4{
-    max-width: 100%;
-    height: 60vh;
-    padding-bottom: 6rem;
+    max-width: 84.1%;
+    height: 45vh;
     overflow: hidden;
     border-radius: 2rem;
     border: .1rem solid #e0e0e6;
@@ -1113,10 +1175,10 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .swiper-slide-4{
-    max-width: 18.3rem;
     padding: .5rem 1rem;
     display: flex;
     flex-direction: column;
@@ -1149,7 +1211,8 @@ html{
 .topside-watch-all a{
     color: #19bfd3;
     position: absolute;
-    left: 5rem;
+    left: 3rem;
+    top: 2.2rem;
     font-size: 1.4rem;
 }
 
@@ -1205,23 +1268,29 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 
 .off-card-3 img{
-    width: 1280px;
+    width: 1545px;
     object-fit: contain;
     border-radius:2rem;
 }
 /* End of Off-cards-3 */
 
 /* Best of offs and Sale */
+.container-best-offs-and-sales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .best-offs-n-sale{
     margin:2rem 1rem;
     font-family: "IRANyekan",sans-serif;
     padding: 1rem 2rem;
     border: .1rem solid #e0e0e6;
     border-radius: 2rem;
-
+    width: 83.4%;
 }
 
 .top-side-best-offs-n-sale{
@@ -1265,6 +1334,10 @@ html{
 /* End of Best of offs and Sale */
 
 /* Blog section */
+.container-blog-section{
+    width:86.4%;
+    margin: 0 auto;
+}
 .blog-section{
     display: flex;
     flex-direction: column;
@@ -1333,6 +1406,7 @@ html{
 /* End of  Blog section */
 
 /* footer-section */
+
 .footer-section{
     margin-top: 5rem;
     width: 100%;
@@ -1343,11 +1417,14 @@ html{
 
 }
 
+.footer-heading-container{
+    margin: 0 7rem;
+}
 .footer-heading{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin: 2rem 5rem 0 5rem;
 }
 
 .footer-heading img{
@@ -1378,6 +1455,8 @@ html{
     font-size: 1.3rem;
     margin-top: 1.3rem;
     gap: 2rem;
+    margin: 0 7rem;
+
 }
 /* End of Support footer */
 
@@ -1756,7 +1835,7 @@ justify-content: space-between;
 /* profile panel */
 
 .profile-panel{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -1776,6 +1855,7 @@ justify-content: space-between;
 
 .shown{
     opacity: 1;
+    display: flex;
 }
 
 
@@ -2035,4 +2115,18 @@ justify-content: space-between;
 }
 
 /* End of email validation */
+
+
+
+
+/* Responsive */
+
+@media (max-width:1973px) {
+    .top-nav,.navbar-full-line{
+        padding: 0 2rem;
+        margin: 0 6.73rem;
+    }
+
+
+}
 

@@ -44,13 +44,13 @@ window.addEventListener('scroll',()=>{
         navbar_full_line.classList.remove('navbar-full-line-scroll-top-shown');
         navbar.classList.add('navbar-scrolled-down');
 
-    }else if(window.scrollY < lastScrolled - 10){
+    }else if(window.scrollY < lastScrolled - 5){
         // console.log('to the top');
         // userInfo.style.backgroundColor='lightblue';
 
         navbar_full_line.classList.add('navbar-full-line-scroll-top-shown');
         navbar_full_line.classList.remove('navbar-full-line-scroll-down-hide');
-        if(window.scrollY + window.innerHeight <= offers.offsetTop + offers.offsetHeight / 2.1){
+        if(window.scrollY + window.innerHeight <= offers.offsetTop + offers.offsetHeight / 1.3){
             navbar.classList.remove('navbar-scrolled-down')
     }
 }
