@@ -52,6 +52,8 @@ window.addEventListener('scroll',()=>{
         navbar_full_line.classList.remove('navbar-full-line-scroll-down-hide');
         if(window.scrollY + window.innerHeight <= offers.offsetTop + offers.offsetHeight / 1.3){
             navbar.classList.remove('navbar-scrolled-down')
+            OtherContentWhenFocusedSearchBox.style.zIndex=2;
+
     }
 }
 
@@ -68,21 +70,19 @@ searchBoxInput.addEventListener('focus',()=>{
     searchContent.classList.add('search-content-activtion')
     document.body.style.overflow='hidden';
     OtherContentWhenFocusedSearchBox.classList.add('focused-search-box-container-shown')
-
     navbar_full_line.classList.add('navbar-full-line-z-index');
 
     userInfo.classList.remove('userInfo-Background')
     profilePanel.classList.remove('shown')
 
+
 })
 searchBoxInput.addEventListener('blur',()=>{
     focusedSearchBox.classList.remove('focused-search-box-activated')
-    container.classList.remove('body-blur')
     document.body.style.overflowY='scroll';
     searchContent.classList.remove('search-content-activtion')
     OtherContentWhenFocusedSearchBox.classList.remove('focused-search-box-container-shown')
     navbar_full_line.classList.remove('navbar-full-line-z-index');
-
     userInfo.classList.remove('userInfo-Background')
     profilePanel.classList.remove('shown')
 
@@ -134,3 +134,5 @@ else
 return false;
 }
 }
+
+

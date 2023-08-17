@@ -22,6 +22,7 @@ html{
     font-size: 62.5%;
     /* to make the rem = 10px */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* End of Common Styles */
@@ -34,6 +35,7 @@ html{
     border-bottom: .1rem solid #e0e0e6;
     box-shadow: 0 .01rem .7rem;
     width: 100%;
+    position: relative;
     z-index: 21999;
     padding-top: .35rem;
 }
@@ -1453,9 +1455,8 @@ html{
     align-items: center;
     justify-content: flex-end;
     font-size: 1.3rem;
-    margin-top: 1.3rem;
     gap: 2rem;
-    margin: 0 7rem;
+    margin: 1.6rem 11rem 0 11rem;
 
 }
 /* End of Support footer */
@@ -1465,6 +1466,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: -1rem 10rem 0 10rem;
 }
 
 .box-footer{
@@ -1488,9 +1490,11 @@ html{
 
 /* Digi footer Subject */
 .digi-footer-subject{
-display: flex;
-align-items: flex-start;
-justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 10rem 0 0;
+
 
 }
 .digi-help{
@@ -1498,7 +1502,7 @@ justify-content: space-between;
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
-    gap: 14rem;
+    gap: 19rem;
 
 }
 .headings{
@@ -1612,16 +1616,17 @@ justify-content: space-between;
 
 /* Footer Banner */
 .footer-banner{
-    height: 14vh;
+    height: 7vh;
     font-family: "IRANyekan",sans-serif;
     display: flex;
     border-radius: 1rem;
     align-items: center;
     justify-content: space-between;
-    margin:1rem 0rem;
     background-color: #3c4b6d;
     padding: 1rem 0;
     position: relative;
+    width: 88.9%;
+    margin: 1rem 11.5rem;
 }
 .footer-banner::after{
     content: '';
@@ -1685,7 +1690,7 @@ justify-content: space-between;
 
 /* about us */
 .about-us{
-    margin-top: 6.2rem;
+    margin:6.2rem 8rem 0 11rem ;
     display: flex;
     border-bottom: .22rem solid #e0e0e6;
     padding-bottom: 1.5rem;
@@ -1721,7 +1726,7 @@ justify-content: space-between;
 }
 
 .more-about-us-reveal{
-    height: 60rem;
+    height: 55rem;
     overflow: visible;
     &::before{content: none;}
     /* har gah in class ezafe shod be DIV on moghe ::before
@@ -1782,6 +1787,7 @@ justify-content: space-between;
     justify-content: flex-end;
     width: 100%;
     margin-top: .5rem;
+    margin-bottom: .7rem;
     gap: 1rem;
     color: #007295;
     font-size: 1.3rem;
@@ -1806,8 +1812,13 @@ justify-content: space-between;
 /* End of Copyright */
 
 /* Other services */
+.other-services-container{
+    width: 1900px;
+    margin-left: -5rem;
+}
+
 .other-services{
-    margin: -2rem;
+    height: 17rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1817,7 +1828,7 @@ justify-content: space-between;
 }
 
 .other-services a{
-    padding: 3.222rem;
+    padding:0 5.222rem;
 }
 
 .other-services a{
@@ -1826,6 +1837,17 @@ justify-content: space-between;
 
 }
 
+.other-services a img{
+    width: 85px;
+    height: 80px;
+}
+.other-services a:nth-child(9){
+    border-right: none;
+}
+.other-services a:nth-child(18){
+    border-right: none;
+
+}
 
 /* End of Other services */
 
@@ -2010,6 +2032,7 @@ justify-content: space-between;
         transition: all .5s;
         z-index:1;
         box-shadow: -0.2rem 0.7rem 1rem #000;
+        z-index: 9991;
     }
 
 
@@ -2017,7 +2040,6 @@ justify-content: space-between;
 .focused-search-box-activated{
     transition: all .5s ;
     opacity: 1;
-    z-index: 9991;
     display: flex;
 }
 
@@ -2088,13 +2110,13 @@ justify-content: space-between;
 
 .focused-search-box-container{
     width: 100%;
-    height:90%;
+    height:100%;
     position: fixed;
     background-color: rgba(0, 0, 0, .5);
     right: 0;
     bottom: 0;
     opacity: 0;
-    z-index: 1000;
+    z-index: 10000;
     visibility: hidden;
 }
 .focused-search-box-container-shown{
