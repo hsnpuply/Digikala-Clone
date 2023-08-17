@@ -845,7 +845,6 @@ html{
     height: 20rem;
     padding-bottom: 6rem;
     overflow: hidden;
-    /* background:linear-gradient(to top,#1acc40,#4db932); */
     border-radius: 2rem;
     border: .1rem solid #e0e0e6;
 }
@@ -1639,12 +1638,13 @@ html{
 }
 
 
-
-
 .footer-banner .banner-container .left-banner img{
     width: 150px;
     object-fit: contain;
 }
+
+
+
 .banner-container{
     display: flex;
     width: 100%;
@@ -1765,6 +1765,7 @@ html{
     display: flex;
     align-items: flex-start;
 }
+
 .logo{
     border: .1rem solid #e0e0e6;
     padding: 1.7rem;
@@ -2143,12 +2144,180 @@ html{
 
 /* Responsive */
 
-@media (max-width:1973px) {
-    .top-nav,.navbar-full-line{
-        padding: 0 2rem;
-        margin: 0 6.73rem;
+@media (max-width:1550px) {
+
+    .all-methods{
+        gap: 7rem;
+    }
+    .buy-methods img:not(.aghsat){
+        width: 5.5rem;
+        border-radius: 50%;
+    }
+
+    .swiper-container-2{
+        max-width: 85.45%;
+        height: 30rem;
+    }
+    .swiper-slide-2{
+        max-width: 14rem;
+    }
+    .supermarketi{
+        width: 94.5%;
+    }
+
+    .cards{
+        gap: 2rem;
+
+    }
+
+    .card_ img{
+        width:308px;
+        height: 236px;
+        border-radius: 1.6rem;
+        object-fit: cover;
+    }
+
+    .category-products{
+        gap: 4rem;
+    }
+    .category-products p{
+        font-weight: 300;
+    }
+
+    .off-cards img{
+        width: 630px;
     }
 
 
-}
+    .digi-offers{
+        margin: 1rem 10rem;
+    }
 
+    .digi-offers img{
+        width: 90px;
+    }
+
+    .offer-board{
+        height: 30rem;
+        gap: 5rem;
+        row-gap: 1rem;
+    }
+
+    .swiper-container-3{
+        max-width: 89% ;
+    }
+
+    .off-cards-2 img{
+        width: 642px;
+    }
+
+    .digital-products{
+        width: 89%;
+    }
+
+    .prod-imgs img{
+        width:90px;
+    }
+
+    .digi-plus{
+        width: 88.5%;
+        height: 50vh;
+    }
+
+    .fast-delivery-products img{
+        width: 70px;
+    }
+
+    .digi-club{
+        width: 89%;
+        height: 11.4vh;
+    }
+
+    .swiper-container-4{
+        max-width:92% ;
+        height: 54vh;
+    }
+
+    .rows img{
+        width: 80px;
+    }
+
+    .off-card-3 img{
+        width: 1344px;
+    }
+
+    .best-offs-n-sale{
+        width: 90%;
+    }
+
+    .container-blog-section{
+        width: 70%;
+    }
+
+    .blog-card img{
+        width: 328px;
+    }
+
+    .footer-section{
+        padding: 1rem;
+    }
+
+    .footer-heading-container{
+        margin: 0 .5rem;
+    }
+    .footer-heading{
+        margin: 1rem;
+    }
+
+    .support{
+        margin: 1.5rem 1rem 0 1rem;
+    }
+
+    .services{
+        margin: -1.5rem 5.5rem 0 5.5rem;
+    }
+
+    .digi-footer-subject{
+        margin: 0 1.5rem 0 0;
+    }
+
+    .contact-us{
+        width: 31%;
+    }
+
+    .footer-banner{
+        height: 8.3rem;
+        width:98.5%;
+        margin: 1rem 1rem;
+    }
+
+    .footer-banner .banner-container .left-banner img{
+        width: 140px;
+    }
+    .myket img{
+        max-width: 140px;
+        max-height: 70px;
+    }
+
+    .more-apps-footer{
+        max-width:47px;
+        max-height:44px;
+    }
+
+    .about-us{
+        margin: 6.2rem 1rem 0 2rem;
+    }
+
+    .copyright{
+        margin: 3.5rem 0;
+    }
+
+    .other-services-container{
+        height: 14rem;
+    }
+    .other-services{
+        width: 1550px;
+        margin-left: 1rem;
+    }
+
+}
