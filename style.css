@@ -2145,7 +2145,6 @@ html{
 /* Responsive */
 
 @media (max-width:1550px) {
-
     .all-methods{
         gap: 7rem;
     }
@@ -2319,5 +2318,7 @@ html{
         width: 1550px;
         margin-left: 1rem;
     }
-
+    .other-services a{
+        padding: 0 4rem;
+    }
 }
