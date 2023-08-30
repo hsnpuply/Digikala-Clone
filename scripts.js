@@ -27,8 +27,6 @@ btnAboutUs.addEventListener('click',()=>{
 
 
 
-
-
 // Navbar scrolling
 
 const axsisY=0;
@@ -71,7 +69,6 @@ searchBoxInput.addEventListener('focus',()=>{
     document.body.style.overflow='hidden';
     OtherContentWhenFocusedSearchBox.classList.add('focused-search-box-container-shown')
     navbar_full_line.classList.add('navbar-full-line-z-index');
-
     userInfo.classList.remove('userInfo-Background')
     profilePanel.classList.remove('shown')
 
@@ -79,7 +76,7 @@ searchBoxInput.addEventListener('focus',()=>{
 })
 searchBoxInput.addEventListener('blur',()=>{
     focusedSearchBox.classList.remove('focused-search-box-activated')
-    document.body.style.overflowY='scroll';
+    document.body.style.overflow='scroll';
     searchContent.classList.remove('search-content-activtion')
     OtherContentWhenFocusedSearchBox.classList.remove('focused-search-box-container-shown')
     navbar_full_line.classList.remove('navbar-full-line-z-index');
