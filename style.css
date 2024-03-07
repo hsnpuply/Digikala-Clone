@@ -1726,7 +1726,7 @@ html{
 }
 
 .more-about-us-reveal{
-    height: 55rem;
+    height: auto;
     overflow: visible;
     &::before{content: none;}
     /* har gah in class ezafe shod be DIV on moghe ::before
